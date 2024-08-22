@@ -1,7 +1,10 @@
-import { defineConfig } from 'next';
-
-export default defineConfig({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
     output: 'export',
-    basePath: 'mapbox-task',
-    assetPrefix: 'mapbox-task',
-});
+    images: {
+        unoptimized: true,
+    },
+    basePath: '/mapbox-task',  // Убедитесь, что это совпадает с названием вашего репозитория на GitHub
+};
+
+export default nextConfig;
