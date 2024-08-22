@@ -5,6 +5,7 @@ const nextConfig = {
         unoptimized: true,
     },
     basePath: '/mapbox-task',
+    assetPrefix: '/mapbox-task/',
 };
 
 export default nextConfig;
