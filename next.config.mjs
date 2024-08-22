@@ -4,7 +4,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: '/mapbox-task',  // Убедитесь, что это совпадает с названием вашего репозитория на GitHub
+    basePath: '/mapbox-task',
 };
 
 export default nextConfig;

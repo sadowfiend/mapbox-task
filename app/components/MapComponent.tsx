@@ -131,6 +131,11 @@ const MapComponent: React.FC = () => {
                     return;
                 }
 
+                if (!feature.properties) {
+                    console.log("Feature properties are null");
+                    return;
+                }
+
                 // Извлечение данных здания
                 const buildingName = feature.properties.name || 'N/A';
                 const buildingAddress = feature.properties.address || 'N/A';
@@ -169,7 +174,7 @@ const MapComponent: React.FC = () => {
                 ]);
 
                 // Обновление идентификатора выбранного здания
-                selectedBuildingId.current = featureId;
+                selectedBuildingId.current = featureId as number;
 
                 // Обновление информации в попапе
                 if (popupContainer.current) {
@@ -220,4 +225,4 @@ const MapComponent: React.FC = () => {
     return <div ref={mapContainer} className="map-container" style={{ height: '100vh', width: '100%', position: 'relative' }} />;
 };
 
-export default MapComponent
+export default MapComponent;
