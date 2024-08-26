@@ -4,8 +4,8 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: '/mapbox-task',
-    assetPrefix: '/mapbox-task/',
+    // basePath: '/mapbox-task',
+    // assetPrefix: '/mapbox-task/',
 };
 
 export default nextConfig;
